@@ -1,67 +1,67 @@
-time	month	temperature	wind	humidity	barometer	visibility	weather
-2.0	1	24	13	78	1011	8	Passing clouds
-14.0	1	25	11	89	1011	0	Light rain More clouds than sun
-2.0	1	26	2	84	1010	0	Passing clouds
-13.5	1	33	9	46	1009	0	Scattered clouds
-2.0	1	24	4	83	1013	8	Passing clouds
-14.0	1	33	6	36	1011	0	Scattered clouds
-2.0	2	26	4	70	1011	0	Passing clouds
-13.5	2	32	2	49	1010	0	Scattered clouds
-2.0	2	26	15	70	1013	0	Passing clouds
-13.5	2	35	11	28	1011	0	Scattered clouds
-2.0	2	26	9	79	1010	0	Passing clouds
-13.5	2	34	11	36	1010	0	Partly sunny
-2.0	3	26	17	74	1009	0	Passing clouds
-13.5	3	33	13	44	1009	0	Partly sunny
-2.0	3	28	9	79	1011	0	Passing clouds
-14.0	3	34	6	44	1010	8	Partly sunny
-2.0	3	28	13	70	1011	0	Passing clouds
-13.5	3	37	17	27	1010	0	Partly sunny
-2.0	4	27	11	79	1011	0	Passing clouds
-14.0	4	35	13	39	1009	0	Heavy rain Passing clouds
-2.0	4	29	11	89	1008	0	Passing clouds
-14.0	4	36	13	47	1007	0	Partly sunny
-2.0	4	29	11	74	1007	0	Passing clouds
-14.0	4	35	11	50	1006	0	Partly sunny
-2.0	5	30	6	79	1007	0	Passing clouds
-13.5	5	35	9	56	1007	0	Scattered clouds
-2.0	5	29	15	84	1009	0	Passing clouds
-14.5	5	31	20	75	1007	0	Scattered clouds
-2.0	5	27	4	94	1007	0	Passing clouds
-13.5	5	29	28	79	1006	0	Sprinkles Scattered clouds
-2.0	6	30	2	79	1007	0	Passing clouds
-13.5	6	34	11	59	1006	8	Partly sunny
-2.0	6	27	11	94	1007	0	Partly cloudy
-13.5	6	31	20	79	1006	8	Sprinkles Scattered clouds
-2.0	6	26	4	100	1009	8	Passing clouds
-13.5	6	33	20	63	1007	7	Sprinkles Scattered clouds
-2.0	7	27	11	100	1006	0	Passing clouds
-13.5	7	32	24	67	1005	0	Partly sunny
-2.0	7	28	6	89	1006	0	Passing clouds
-13.5	7	33	20	59	1003	0	Scattered clouds
-2.0	7	26	6	94	1009	7	Passing clouds
-13.5	7	33	13	59	1007	0	Partly sunny
-2.5	8	26	11	89	1007	0	Passing clouds
-14.5	8	28	26	89	1006	0	Broken clouds
-2.0	8	27	22	94	1007	0	Passing clouds
-13.5	8	31	28	75	1007	8	Sprinkles Scattered clouds
-2.0	8	25	9	100	1008	0	Partly cloudy
-14.0	8	32	20	63	1006	0	Scattered clouds
-2.0	9	26	13	94	1006	0	Passing clouds
-13.5	9	31	28	66	1005	0	Scattered clouds
-2.0	9	25	7	100	1007	0	Passing clouds
-15.0	9	28	13	89	1004	8	Broken clouds
-2.0	9	28	2	89	1011	8	Passing clouds
-13.5	9	34	2	56	1010	7	Broken clouds
-2.0	10	25	0	100	1010	8	Passing clouds
-13.5	10	29	6	79	1009	6	Thunderstorms Scattered clouds
-2.0	10	26	4	94	1010	0	Passing clouds
-13.5	10	35	6	44	1007	0	Partly sunny
-2.0	10	27	7	89	1009	8	Passing clouds
-14.0	10	35	11	53	1007	0	Scattered clouds
-2.0	11	26	7	100	1008	0	Passing clouds
-14.5	11	30	9	70	1007	0	Scattered clouds
-2.0	11	25	2	89	1010	8	Passing clouds
-14.0	11	31	7	62	1008	8	Scattered clouds
-2.0	11	26	6	94	1010	7	Passing clouds
-13.5	11	34	9	47	1007	0	Scattered clouds
+time;month;temperature;wind;humidity;barometer;visibility;weather
+2.0;1;24;13;78;1011;8;Passing clouds
+14.0;1;25;11;89;1011;0;Light rain More clouds than sun
+2.0;1;26;2;84;1010;0;Passing clouds
+13.5;1;33;9;46;1009;0;Scattered clouds
+2.0;1;24;4;83;1013;8;Passing clouds
+14.0;1;33;6;36;1011;0;Scattered clouds
+2.0;2;26;4;70;1011;0;Passing clouds
+13.5;2;32;2;49;1010;0;Scattered clouds
+2.0;2;26;15;70;1013;0;Passing clouds
+13.5;2;35;11;28;1011;0;Scattered clouds
+2.0;2;26;9;79;1010;0;Passing clouds
+13.5;2;34;11;36;1010;0;Partly sunny
+2.0;3;26;17;74;1009;0;Passing clouds
+13.5;3;33;13;44;1009;0;Partly sunny
+2.0;3;28;9;79;1011;0;Passing clouds
+14.0;3;34;6;44;1010;8;Partly sunny
+2.0;3;28;13;70;1011;0;Passing clouds
+13.5;3;37;17;27;1010;0;Partly sunny
+2.0;4;27;11;79;1011;0;Passing clouds
+14.0;4;35;13;39;1009;0;Heavy rain Passing clouds
+2.0;4;29;11;89;1008;0;Passing clouds
+14.0;4;36;13;47;1007;0;Partly sunny
+2.0;4;29;11;74;1007;0;Passing clouds
+14.0;4;35;11;50;1006;0;Partly sunny
+2.0;5;30;6;79;1007;0;Passing clouds
+13.5;5;35;9;56;1007;0;Scattered clouds
+2.0;5;29;15;84;1009;0;Passing clouds
+14.5;5;31;20;75;1007;0;Scattered clouds
+2.0;5;27;4;94;1007;0;Passing clouds
+13.5;5;29;28;79;1006;0;Sprinkles Scattered clouds
+2.0;6;30;2;79;1007;0;Passing clouds
+13.5;6;34;11;59;1006;8;Partly sunny
+2.0;6;27;11;94;1007;0;Partly cloudy
+13.5;6;31;20;79;1006;8;Sprinkles Scattered clouds
+2.0;6;26;4;100;1009;8;Passing clouds
+13.5;6;33;20;63;1007;7;Sprinkles Scattered clouds
+2.0;7;27;11;100;1006;0;Passing clouds
+13.5;7;32;24;67;1005;0;Partly sunny
+2.0;7;28;6;89;1006;0;Passing clouds
+13.5;7;33;20;59;1003;0;Scattered clouds
+2.0;7;26;6;94;1009;7;Passing clouds
+13.5;7;33;13;59;1007;0;Partly sunny
+2.5;8;26;11;89;1007;0;Passing clouds
+14.5;8;28;26;89;1006;0;Broken clouds
+2.0;8;27;22;94;1007;0;Passing clouds
+13.5;8;31;28;75;1007;8;Sprinkles Scattered clouds
+2.0;8;25;9;100;1008;0;Partly cloudy
+14.0;8;32;20;63;1006;0;Scattered clouds
+2.0;9;26;13;94;1006;0;Passing clouds
+13.5;9;31;28;66;1005;0;Scattered clouds
+2.0;9;25;7;100;1007;0;Passing clouds
+15.0;9;28;13;89;1004;8;Broken clouds
+2.0;9;28;2;89;1011;8;Passing clouds
+13.5;9;34;2;56;1010;7;Broken clouds
+2.0;10;25;0;100;1010;8;Passing clouds
+13.5;10;29;6;79;1009;6;Thunderstorms Scattered clouds
+2.0;10;26;4;94;1010;0;Passing clouds
+13.5;10;35;6;44;1007;0;Partly sunny
+2.0;10;27;7;89;1009;8;Passing clouds
+14.0;10;35;11;53;1007;0;Scattered clouds
+2.0;11;26;7;100;1008;0;Passing clouds
+14.5;11;30;9;70;1007;0;Scattered clouds
+2.0;11;25;2;89;1010;8;Passing clouds
+14.0;11;31;7;62;1008;8;Scattered clouds
+2.0;11;26;6;94;1010;7;Passing clouds
+13.5;11;34;9;47;1007;0;Scattered clouds
