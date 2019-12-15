@@ -20,9 +20,9 @@ Mô tả dữ liệu:
 - Dữ liệu được lưu trong file weather_data.csv
 - Dữ liệu gồm ? cột ? dòng
 - Ý nghĩa của các cột:
-    time: thời gian (str, format hh:mm)
-    
-    month: tháng (float) (tạm thời, có thể chuyển về str)
+
+    - time: thời gian (str, format hh:mm)
+    - month: tháng (float) (tạm thời, có thể chuyển về str)
     
     temperature: nhiệt độ môi trường (float, độ C)
     
