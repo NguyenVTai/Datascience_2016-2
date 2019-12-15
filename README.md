@@ -44,4 +44,6 @@ Gán nhãn:
 # 3. Tiền xử lý dữ liệu và áp dụng mô hình:
 # ??. Các vấn đề cần giải quyết:
 - Giảm số lượng class ở label (và weather)
+- Mô hình hóa dữ liệu, tìm mô hình phù hợp
 - Tiền xử lý các thuộc tính về mặt kiểu dữ liệu và giá trị để phù hợp với mô hình
+- Áp dụng mô hình và đi đến kết luận
