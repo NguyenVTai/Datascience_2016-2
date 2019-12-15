@@ -21,17 +21,32 @@ Mô tả dữ liệu:
 - Dữ liệu gồm ? cột ? dòng
 - Ý nghĩa của các cột:
     time: thời gian (str, format hh:mm)
+    
     month: tháng (float) (tạm thời, có thể chuyển về str)
+    
     temperature: nhiệt độ môi trường (float, độ C)
+    
     feelslike: nhiệt độ cảm nhận được (float, độ C)
+    
     wind: tốc độ gió (float, km/h)
+    
     direction: hướng gió (str)
+    
     gust: tốc độ gió tối đa (float, km/h)
+    
     cloud: độ che phủ của mây (float, %)
+    
     humidity: độ ẩm không khí (float, %)
+    
     precipitation: lượng mưa (float, mm)
+    
     pressure: áp suất không khí (float, bm)
+    
     weather: tình hình thời tiết hiện tại (str)
+    
+-   Dữ liệu không có giá trị thiếu
 # 2. Gán nhãn và tiền xử lý dữ liệu:
-
+Gán nhãn:
+- Thêm cột label vào dữ liệu
+- Giá trị của 
 # 3. Áp dụng mô hình:
