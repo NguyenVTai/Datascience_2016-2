@@ -71,9 +71,9 @@ Mô tả dữ liệu:
 - Cuối cùng là chuẩn hóa lại giá trị trong bảng bằng StandardScaler
 # 4. Áp dụng mô hình
 - Nhóm khảo sát 2 mô hình là multi-layer perceptron, và support vector machine (sử dụng gbf kernel)
-- Ở mô hình multi-layer perceptron nhóm thử nghiệm với alpha = [0.001,0.01, 0.1, 1, 10, 100] và hidden layer sizes = [1,10,20,50,100]
+- Ở mô hình multi-layer perceptron nhóm thử nghiệm với alpha = [0.001,0.01, 0.1, 1, 10,20, 100] và hidden layer sizes = [1,10,20,50,100]
     - Kết quả: độ lỗi thấp nhất trong validation set là 19.582245430809397 khi alpha = 10, là hidden layer sizes là 50
-- Ở mô hình SVM nhóm thử nghiệm với C=[0.1,1,10, 20, 50,100] và gamma  = [0.0001,0.001,0.01,0.1]
+- Ở mô hình SVM nhóm thử nghiệm với C=[0.1,1,10, 20, 50,100] và gamma  = [0.0001,0.001,0.01,0.1,1]
     - Kết quả: 19.647519582245433 khi C = 50 và gamma = 0,01
 - Về độ chính xác, MLP nhỉnh hơn 1 chút, tuy nhiên nhóm không dựa vào đó mà cần thêm đánh giá về precision và recall:
 - Report của MLP:
