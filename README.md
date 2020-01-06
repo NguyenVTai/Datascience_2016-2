@@ -79,11 +79,11 @@ Mô tả dữ liệu:
         rain       0.72      0.43      0.54       778
 
 
-    accuracy                           0.85      7659
+      accuracy                         0.85      7659
     
-   macro avg       0.76      0.63      0.68      7659
+      macro avg    0.76      0.63      0.68      7659
    
-weighted avg       0.83      0.85      0.83      7659
+      weighted avg 0.83      0.85      0.83      7659
 
 - Report của SVM:
 
@@ -96,13 +96,13 @@ weighted avg       0.83      0.85      0.83      7659
         rain       0.75      0.35      0.47       778
 
 
-    accuracy                           0.82      7659
+      accuracy                         0.82      7659
     
-   macro avg       0.76      0.56      0.61      7659
-   
-weighted avg       0.81      0.82      0.80      7659
+      macro avg    0.76      0.56      0.61      7659
+    
+      weighted avg 0.81      0.82      0.80      7659
 
-- Nhóm thấy nên quyết định dựa trên recall do điều quan trọng là tìm được đúng nhãn là mưa hoặc ít mưa
+- Nhóm quyết định dựa trên recall do điều quan trọng là tìm được đúng nhãn là mưa hoặc ít mưa
 - Mô hinh được chọn sau cùng là MLP
 
 # 5. Áp dụng trên tập test và kết luận:
@@ -118,10 +118,10 @@ weighted avg       0.81      0.82      0.80      7659
         rain       0.66      0.43      0.52        86
 
 
-    accuracy                           0.81       852
+      accuracy                         0.81       852
     
-   macro avg       0.69      0.59      0.63       852
+      macro avg    0.69      0.59      0.63       852
    
-weighted avg       0.79      0.81      0.80       852
+      weighted avg 0.79      0.81      0.80       852
 
 - Kết luận: mô hình có thể sẽ không hoạt động tốt khi áp dụng vào thực tế do cả precision và recall của 2 nhãn ltran và rain đều khá thấp. Tuy nhiên, nếu không yêu cầu độ chính xác quá cao, mô hình có thể xem như một thông tin tham khảo trong trường hợp bất đắc dĩ
