@@ -41,7 +41,7 @@ Mô tả dữ liệu:
 - Đồng thời xóa đi dòng cuối cùng trong tập dữ liệu (do không có nhãn tương ứng)
  
 # 3. Tiền xử lý dữ liệu:
-    # 3.1: Dữ liệu trống
+   # 3.1: Dữ liệu trống
     
 - Về vấn đề dữ liệu thiếu, dữ liệu thiếu thu được có giá trị là 0
 - Vắn đề này đặt ra câu hỏi là có nên giữ lại cột precipitation (lượng mưa) hay không, do số lượng 0 rất lớn nhưng nó có thể không phải dữ liệu trống
