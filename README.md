@@ -6,7 +6,16 @@ Bài toán đặt ra: Dự đoán thời tiết của 3 tiếng sau dựa trên 
 Input: Giờ, Tháng, Nhiệt độ,Nhiệt độ cảm nhận được, Tốc độ gió,Hướng gió,Gió giật,Độ che phủ của mây, Độ ẩm,lượng mưa, áp suất và giá trị thời tiết hiện tại. Input có thể lấy từ các cảm biến tự lắp đặt hoặc các trang mạng có cập nhật tình hình thời tiết. Ví dụ: https://www.worldweatheronline.com/ho-chi-minh-city-weather-history/vn.aspx
 
 Output: Giá trị thời tiết của 3 giờ sau
-
+# 0. Các phần và code tương ứng:
+- Lấy dữ liệu:
+    Code lấy dữ liệu trong file crawl_data.ipynb
+    
+    Để code hoạt động, cần cài đặt thư viện selenium, request html, và để file chromedriver.exe (hoặc bất cứ driver của browser nào bạn muốn sử dụng) chung với thư mục của file chứa code
+    
+- Tiền xử lý và áp dụng mô hình:
+    Code trong file Final.ipynb
+    
+    Để code hoạt động cần để file weather_data.csv vào chung thư mục với thư mục code
 # 1. Lấy dữ liệu:
 
 Dữ liệu được lấy từ trang: https://www.worldweatheronline.com/ho-chi-minh-city-weather-history/vn.aspx
@@ -14,8 +23,7 @@ Dữ liệu được lấy từ trang: https://www.worldweatheronline.com/ho-chi
 Hỉnh ảnh mô phỏng các thao tác lấy dữ liệu:
 https://media.discordapp.net/attachments/513323420428271647/655663026313232407/unknown.png
 
-Code lấy dữ liệu trong file crawl_data.ipynb
-Để code hoạt động, cần cài đặt thư viện selenium, request html, và để file chromedriver.exe (hoặc bất cứ driver của browser nào bạn muốn sử dụng) chung với thư mục của file chứa code
+
 
 Mô tả dữ liệu:
 - Dữ liệu được lưu trong file weather_data.csv
