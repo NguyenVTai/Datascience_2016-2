@@ -78,18 +78,18 @@ Mô tả dữ liệu:
 - Report của MLP khi đánh giá trên tập validation:
 
               precision    recall  f1-score   support
+              
 
-
-      norain       0.88      0.92      0.90      1155
+      norain       0.87      0.92      0.90      1155
       
         rain       0.71      0.60      0.65       377
-
+        
 
       accuracy                         0.84      1532
-      
-      macro avg    0.79      0.76      0.78      1532
-      
-      weighted avg 0.84      0.84      0.84      1532
+    
+      macro avg    0.79      0.76      0.77      1532
+   
+      weighted avg 0.83      0.84      0.84      1532
 
 - Report của SVM khi đánh giá trên tập validation:
 
@@ -132,15 +132,15 @@ Mô tả dữ liệu:
               precision    recall  f1-score   support
 
 
-      norain       0.89      0.94      0.92       643
+      norain       0.89      0.94      0.91       643
       
-        rain       0.79      0.65      0.71       209
-
+        rain       0.78      0.65      0.70       209
+        
 
       accuracy                         0.87       852
     
-      macro avg    0.84      0.80      0.82       852
+      macro avg    0.83      0.79      0.81       852
    
-      weighted avg 0.87      0.87      0.87       852
+      weighted avg 0.86      0.87      0.86       852
 
 - Kết luận: mô hình có thể sẽ không hoạt động tốt khi áp dụng vào thực tế nhưng cũng sẽ không quá tệ. Nếu không yêu cầu độ chính xác quá cao, mô hình có thể xem như một thông tin tham khảo trong trường hợp bất đắc dĩ
