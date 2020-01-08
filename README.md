@@ -65,71 +65,82 @@ Mô tả dữ liệu:
 - Cột weather: Chuyển giá trị hiện tại thành 1 trong 3 giá trị "rain"(có mưa) "ltrain"(ít mưa) và "norain"(không mưa)
     - Nhóm tự tạo ra 3 list để lưu giá trị (bước này làm bằng tay do phải đọc hiểu)
         list_norain = ['Clear', 'Cloudy', 'Mist', 'Sunny', 'Partly cloudy', 'Thundery outbreaks possible']
-        list_ltrain = ['Light drizzle','Light rain','Light rain shower', 'Patchy light drizzle', 'Patchy light rain', 'Patchy light rain with thunder','Patchy rain possible']
-        list_rain = ['Heavy rain','Heavy rain at times','Moderate or heavy rain shower','Moderate rain', 'Moderate rain at times', 'Overcast','Torrential rain shower']
+        list_rain = ['Light drizzle','Light rain','Light rain shower', 'Patchy light drizzle', 'Patchy light rain', 'Patchy light rain with thunder','Patchy rain possible','Heavy rain','Heavy rain at times','Moderate or heavy rain shower','Moderate rain', 'Moderate rain at times', 'Overcast','Torrential rain shower']
     - Bước này giống với lúc lấy nhãn dữ liệu
 - Cuối cùng là chuẩn hóa lại giá trị trong bảng bằng StandardScaler
 # 4. Áp dụng mô hình
 - Nhóm khảo sát 2 mô hình là multi-layer perceptron, và support vector machine (sử dụng gbf kernel)
-- Ở mô hình multi-layer perceptron nhóm thử nghiệm với alpha = [0.001,0.01, 0.1, 1, 10,20, 100] và hidden layer sizes = [1,10,20,50,100]
-    - Kết quả: độ lỗi thấp nhất trong validation set là 19.582245430809397 khi alpha = 10, là hidden layer sizes là 50
+- Ở mô hình multi-layer perceptron nhóm thử nghiệm với alpha = [0.001,0.01, 0.1, 1, 10,20, 100] và hidden layer sizes = [1,10,20,50,70,100]
+    - Kết quả: độ lỗi thấp nhất trong validation set là 15.796344647519579 khi alpha = 10, là hidden layer sizes là 50
 - Ở mô hình SVM nhóm thử nghiệm với C=[0.1,1,10, 20, 50,100] và gamma  = [0.0001,0.001,0.01,0.1,1]
-    - Kết quả: 19.647519582245433 khi C = 50 và gamma = 0,01
+    - Kết quả: 15.861618798955613 khi C = 50 và gamma = 0,1
 - Về độ chính xác, MLP nhỉnh hơn 1 chút, tuy nhiên nhóm không dựa vào đó mà cần thêm đánh giá về precision và recall:
-- Report của MLP:
+- Report của MLP khi đánh giá trên tập validation:
 
               precision    recall  f1-score   support
 
-      ltrain       0.70      0.49      0.58      1105
+
+      norain       0.88      0.92      0.90      1155
       
-      norain       0.87      0.97      0.92      5776
+        rain       0.71      0.60      0.65       377
+
+
+      accuracy                         0.84      1532
       
-        rain       0.72      0.43      0.54       778
+      macro avg    0.79      0.76      0.78      1532
+      
+      weighted avg 0.84      0.84      0.84      1532
 
-
-      accuracy                         0.85      7659
-    
-      macro avg    0.76      0.63      0.68      7659
-   
-      weighted avg 0.83      0.85      0.83      7659
-
-- Report của SVM:
+- Report của SVM khi đánh giá trên tập validation:
 
               precision    recall  f1-score   support
 
-      ltrain       0.71      0.35      0.47      1105
+
+      norain       0.87      0.93      0.90      1155
       
-      norain       0.84      0.98      0.90      5776
+        rain       0.72      0.58      0.64       377
+
+
+      accuracy                         0.84      1532
       
-        rain       0.75      0.35      0.47       778
+      macro avg    0.80      0.75      0.77      1532
+      
+      weighted avg 0.83      0.84      0.83      1532
 
-
-      accuracy                         0.82      7659
-    
-      macro avg    0.76      0.56      0.61      7659
-    
-      weighted avg 0.81      0.82      0.80      7659
-
-- Nhóm quyết định dựa trên recall do điều quan trọng là tìm được đúng nhãn là mưa hoặc ít mưa
+- 2 mô hình có độ chính xác gần như là tương đương
+- Dựa vào điểm f1-score ở nhãn rain, MLP nhỉnh hơn SVM 
 - Mô hinh được chọn sau cùng là MLP
+- Kết quả của mô hình MLP khi train trên toàn tập train:
+
+              precision    recall  f1-score   support
+
+
+      norain       0.89      0.96      0.92      5776
+      
+        rain       0.84      0.65      0.73      1883
+        
+
+      accuracy                         0.88      7659
+    
+      macro avg    0.86      0.80      0.83      7659
+   
+      weighted avg 0.88      0.88      0.88      7659
 
 # 5. Áp dụng trên tập test và kết luận:
 - Kết quả của mô hình trên tập test:
     
-                  precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
 
-      ltrain       0.57      0.38      0.46       123
+      norain       0.89      0.94      0.92       643
       
-      norain       0.86      0.95      0.90       643
-      
-        rain       0.66      0.43      0.52        86
+        rain       0.79      0.65      0.71       209
 
 
-      accuracy                         0.81       852
+      accuracy                         0.87       852
     
-      macro avg    0.69      0.59      0.63       852
+      macro avg    0.84      0.80      0.82       852
    
-      weighted avg 0.79      0.81      0.80       852
+      weighted avg 0.87      0.87      0.87       852
 
-- Kết luận: mô hình có thể sẽ không hoạt động tốt khi áp dụng vào thực tế do cả precision và recall của 2 nhãn ltran và rain đều khá thấp. Tuy nhiên, nếu không yêu cầu độ chính xác quá cao, mô hình có thể xem như một thông tin tham khảo trong trường hợp bất đắc dĩ
+- Kết luận: mô hình có thể sẽ không hoạt động tốt khi áp dụng vào thực tế nhưng cũng sẽ không quá tệ. Nếu không yêu cầu độ chính xác quá cao, mô hình có thể xem như một thông tin tham khảo trong trường hợp bất đắc dĩ
